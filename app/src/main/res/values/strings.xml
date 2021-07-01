@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EmployeeDetails</string>
+    <string name="title_hint">Title</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="work_email">Work Email</string>
+
+</resources>

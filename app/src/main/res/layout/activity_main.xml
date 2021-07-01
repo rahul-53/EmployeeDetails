@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_person"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Employee"
+        android:textSize="40sp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/dp_30"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTitle"
+            style="@style/textStyle"
+            android:text="Title"
+            />
+        <EditText
+            android:id="@+id/teTitle"
+            android:layout_marginLeft="90dp"
+            style="@style/customStyle"
+            android:hint="@string/title_hint"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/dp_30"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvFirstName"
+            style="@style/textStyle"
+            android:text="First Name"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/teFirstName"
+            style="@style/customStyle"
+            android:hint="@string/first_name"
+
+            />
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_margin="@dimen/dp_30"
+       >
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/tvLastName"
+           style="@style/textStyle"
+           android:text="Last Name"/>
+
+       <EditText
+           android:id="@+id/teLastName"
+           style="@style/customStyle"
+           android:hint="@string/last_name"
+           android:layout_alignRight="@+id/tvLastName"
+
+           />
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/dp_30">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvWorkEmail"
+            style="@style/textStyle"
+            android:text="Work Email"/>
+
+        <EditText
+            android:id="@+id/teWorkEmail"
+            style="@style/customStyle"
+            android:hint="@string/work_email"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
